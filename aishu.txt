@@ -1,0 +1,11 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+df=pd.read_csv("C:/Users/Administrator/Desktop/archive (4)/mtcars.csv")
+x=df.wt
+y=df["mpg"]
+plt.scatter(x,y)
+plt.title('scatter plot')
+plt.xlabel('weight')
+plt.ylabel('mpg')
+plt.colorbar()
+plt.show()
